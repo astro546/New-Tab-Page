@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link href="style.css" rel="stylesheet" />
+    <title>New Tab</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="hour-search-div">
+        <div class="hour">19:44</div>
+        <form class="search-bar" action="#">
+          <input
+            id="google-search"
+            type="text"
+            placeholder="Buscar en Google"
+            name="google-search"
+            class="query"
+          />
+          <button class="search-btn">Buscar</button>
+        </form>
+        <script>
+          let query = document.querySelector(".query");
+          let searchBtn = document.querySelector(".search-btn");
+
+          searchBtn.onclick = function () {
+            let url = "https://www.google.com/search?q=" + query.value;
+            window.open(url, "_top");
+          };
+        </script>
+      </div>
+      <div class="pages-div">
+        <a class="page-icon whats" href="https://web.whatsapp.com/">
+          <ion-icon name="logo-whatsapp"></ion-icon>
+        </a>
+        <a
+          class="page-icon classroom"
+          href="https://classroom.google.com/u/0/h"
+        >
+          <ion-icon name="school-outline"></ion-icon>
+        </a>
+        <a class="page-icon mail" href="https://outlook.live.com/mail/0/">
+          <ion-icon name="mail-outline"></ion-icon>
+        </a>
+        <a
+          class="page-icon scribbr last-icon"
+          href="https://www.scribbr.es/citar/generador/apa/"
+        >
+          <ion-icon name="book-outline"></ion-icon>
+        </a>
+        <a
+          class="page-icon notion"
+          href="https://www.notion.so/University-a01adcc9de594df9ad459c8ea1d9adb3"
+        >
+          <ion-icon name="cube-outline"></ion-icon>
+        </a>
+        <a
+          class="page-icon drive"
+          href="https://drive.google.com/drive/my-drive"
+        >
+          <ion-icon name="cloud-done-outline"></ion-icon>
+        </a>
+        <a class="page-icon github" href="https://github.com/">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a class="page-icon deepl last-icon" href="https://www.deepl.com/es/translator">
+          <ion-icon name="language-outline"></ion-icon>
+        </a>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
